@@ -37,3 +37,4 @@ Bazel-*/
 
 # VS Code
 *.vscode
+*.code-workspace
