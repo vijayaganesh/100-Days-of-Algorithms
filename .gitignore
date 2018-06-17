@@ -55,7 +55,6 @@ CTestTestfile.cmake
 debug_build
 release_build
 bin/
-lib/
 install/
 
 # Bazel
