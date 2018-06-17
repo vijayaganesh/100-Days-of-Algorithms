@@ -38,3 +38,23 @@ Bazel-*/
 # VS Code
 *.vscode
 *.code-workspace
+
+
+#Cmake Files
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Build dir
+build*
+debug_build
+release_build
+bin/
+lib/
+install/

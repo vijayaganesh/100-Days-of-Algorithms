@@ -36,7 +36,7 @@ bool is_directed;
 
 Graph();
 
-~Graph();
+// ~Graph();
 
 Graph(bool is_directed, int num_vertices = 0, int num_edges = 0 );
 

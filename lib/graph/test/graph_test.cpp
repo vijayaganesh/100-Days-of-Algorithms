@@ -3,6 +3,7 @@
  */
 
 #include "../include/graph.hpp"
+#include "../src/graph.cpp"
 
 #include <iostream>
 #include <set>
@@ -21,13 +22,13 @@ int main()
     g.addVertex(3);
 
     g.addEdge(1,3,1);
-    g.addEdge(1,3,1);
+    g.addEdge(1,2,1);
 
     set<pair<int,int> > edge_list = g.edges();
     set<pair<int,int> >::iterator iter;
 
     cout<<"Graph Summary"<<endl;
-    for (iter = edge_list.begin(); iter!= edge_list.end();iter++)
+    for (iter = edge_list.begin(); iter!= edge_list.end();++iter)
     {
         pair<int,int> k_v = *iter;
         cout<<k_v.first<<"--------->"<<k_v.second<<endl;

@@ -15,16 +15,17 @@ namespace vj_lib
     template <typename vertex_data,typename weight_data>
     Graph<vertex_data,weight_data>::Graph( bool is_directed,int num_vertices, int num_edges)
     {
-        this.num_vertices = num_vertices;
-        this.num_edges = num_edges;
-        this.is_directed = is_directed;
+        this->num_vertices = num_vertices;
+        this->num_edges = num_edges;
+        this->is_directed = is_directed;
     }
 
     template <typename vertex_data,typename weight_data>
     void Graph<vertex_data,weight_data>::addVertex(vertex_data vertex)
     {
         vertex_list.insert(vertex);
-        adj_list[vertex] = new set<vertex_data>();
+        set<vertex_data> v_d;
+        adj_list[vertex] = v_d;
         attribute_map[vertex] = false;
         num_vertices++;
     }
@@ -41,7 +42,7 @@ namespace vj_lib
             adj_list[to].insert(from);
             weight_list[make_pair(to,from)] = weight;
         }
-        edge_list++;
+        num_edges++;
     }
 
     template <typename vertex_data,typename weight_data>
