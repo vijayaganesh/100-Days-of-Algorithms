@@ -2,7 +2,7 @@
  * @author VijayaGanesh Mohan
  */
 
-#include "../include/graph.hpp"
+#include "graph.hpp"
 
 #include <iostream>
 #include <set>
