@@ -58,3 +58,8 @@ release_build
 bin/
 lib/
 install/
+
+# Bazel
+/bazel.iml
+/bazel-*
+
