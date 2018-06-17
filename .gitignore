@@ -36,7 +36,7 @@ bazel-*/
 Bazel-*/
 
 # VS Code
-*.vscode
+/.vscode
 *.code-workspace
 
 
@@ -52,7 +52,6 @@ compile_commands.json
 CTestTestfile.cmake
 
 # Build dir
-build*
 debug_build
 release_build
 bin/
